@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+section {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+    /* min-height: 100vh; */
+    padding: 80px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background: #fff;
+}
+
+header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 20px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+
+    text-decoration: none;
+}
+
+/* el header esta excelente */
+
+.content {
+    width: 100%;
+    height: 460px;
+    margin-top: 40px;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Texto */
+.content .textBox {
+    position: relative;
+    max-width: 700px;
+}
+
+.content .textBox h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textBox p {
+    color: #333;
+    /* font-weight: 500; */
+    font-size: 16px;
+}
+
+.content .textBox a {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 8px 20px;
+
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/* Imagen */
+.content .imgBox {
+    width: 500px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    padding-right: 50px;
+}
+
+.content .imgBox img {
+    max-width: 320px;
+}
+
+/* Mini Starbucks */
+.thumb {
+    position: absolute;
+
+    left: 50%;
+    bottom: 20px;
+
+    transform: translate(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+
+    margin: 0 20px;
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb li img {
+    max-width: 60px;
+}
+
+/* Redes Sociales */
+.sci {
+    position: absolute;
+
+    top: 65%;
+    right: 30px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+/* Creamos el circulo de fondo  */
+.circle {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+/* Responsive Design */
+@media (max-width: 1120px) {
+    .content .textBox {
+        position: relative;
+        max-width: 500px;
+    }
+
+    .content .textBox h2 {
+        color: #333;
+        font-size: 2.5em;
+        line-height: 1.4em;
+        font-weight: 500;
+    }
+
+    .content .textBox h2 span {
+        color: #017143;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+
+    .content .imgBox {
+        width: 500px;
+
+        display: flex;
+        justify-content: flex-end;
+
+        padding-right: 20px;
+    }
+
+    .content .imgBox img {
+        max-width: 320px;
+    }
+
+    .thumb {
+        position: absolute;
+
+        left: 40%;
+        bottom: 20px;
+
+        transform: translate(-50%);
+        display: flex;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .content {
+        width: 100%;
+        height: 460px;
+        padding-top: 40px;
+        margin-top: 40px;
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .content .textBox {
+        position: relative;
+        max-width: 500px;
+    }
+
+    .content .textBox h2 {
+        color: #333;
+        font-size: 2.2em;
+        line-height: 1.2em;
+        font-weight: 500;
+    }
+
+    .content .textBox h2 span {
+        color: #017143;
+        font-size: 1em;
+        font-weight: 900;
+    }
+
+    .content .imgBox {
+        width: 350px;
+
+        display: flex;
+        justify-content: flex-end;
+
+        padding-left: 20px;
+    }
+
+    .content .imgBox img {
+        max-width: 250px;
+    }
+
+    .thumb {
+        position: absolute;
+
+        left: 45%;
+        bottom: 18px;
+
+        transform: translate(-50%);
+        display: flex;
+    }
+
+    .thumb li img {
+        max-width: 45px;
+    }
+
+    .circle {
+        position: absolute;
+
+        top: 10%;
+        left: 20%;
+
+        width: 80%;
+        height: 90%;
+
+        background-color: #017143;
+        clip-path: circle(600px at right 800px);
+    }
+}
+
+@media (max-width: 780px) {
+    section {
+        height: auto;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        position: relative;
+        left: 10%;
+    }
+
+    .content {
+        width: 100%;
+        height: auto;
+
+        padding-top: 40px;
+        margin-top: 40px;
+        position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .content .imgBox {
+        width: 220px;
+        position: relative;
+        left: 50%;
+    }
+
+    .content .imgBox img {
+        max-width: 200px;
+    }
+
+    .thumb {
+        position: absolute;
+
+        left: 25%;
+        bottom: 100px;
+
+        transform: translate(-50%);
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .thumb li img {
+        max-width: 45px;
+    }
+
+    .circle {
+        position: absolute;
+
+        top: 40%;
+        left: 30%;
+
+        width: 70%;
+        height: 50%;
+
+        background-color: #017143;
+        clip-path: circle(150px at right 200px);
+    }
+}
+
+@media (max-width: 550px) {
+    section {
+        height: auto;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        position: relative;
+        left: 10%;
+    }
+
+    .content {
+        width: 100%;
+        height: auto;
+
+        padding-top: 40px;
+        margin-top: 40px;
+        position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .content .textBox {
+        position: relative;
+        max-width: 400px;
+    }
+
+    .content .textBox h2 {
+        color: #333;
+        font-size: 1.8em;
+        line-height: 1.2em;
+        font-weight: 500;
+    }
+
+    .content .textBox h2 span {
+        color: #017143;
+        font-size: 1em;
+        font-weight: 900;
+    }
+
+    .content .textBox p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .content .textBox a {
+        display: inline-block;
+
+        margin-top: 16px;
+        padding: 6px 14px;
+
+        background: #017143;
+        color: #fff;
+        border-radius: 20px;
+
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    .content .imgBox {
+        width: 180px;
+        position: relative;
+        left: 35%;
+    }
+
+    .content .imgBox img {
+        max-width: 120px;
+    }
+
+    .thumb {
+        position: absolute;
+
+        left: 30%;
+        bottom: 90px;
+
+        transform: translate(-50%);
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    .thumb li img {
+        max-width: 26px;
+    }
+
+    .circle {
+        position: absolute;
+
+        top: 53%;
+        left: 30%;
+
+        width: 70%;
+        height: 50%;
+
+        background-color: #017143;
+        clip-path: circle(100px at right 100px);
+    }
+}
+
+@media (max-width: 450px) {
+    section {
+        height: auto;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        position: relative;
+        left: 10%;
+    }
+
+    .content {
+        width: 100%;
+        height: auto;
+
+        padding-top: 50px;
+        margin-top: 50px;
+        position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .content .textBox {
+        position: relative;
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .content .textBox h2 {
+        color: #333;
+        font-size: 1.1em;
+        line-height: 1em;
+        font-weight: 500;
+    }
+
+    .content .textBox h2 span {
+        color: #017143;
+        font-size: 1em;
+        font-weight: 900;
+    }
+
+    .content .textBox p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .content .textBox a {
+        display: inline-block;
+
+        margin-top: 16px;
+        padding: 4px 12px;
+
+        background: #017143;
+        color: #fff;
+        border-radius: 20px;
+
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    .content .imgBox {
+        width: 140px;
+        position: relative;
+        left: 35%;
+    }
+
+    .content .imgBox img {
+        max-width: 100px;
+    }
+
+    .thumb {
+        position: absolute;
+
+        left: 30%;
+        bottom: 90px;
+
+        transform: translate(-50%);
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    .thumb li img {
+        max-width: 26px;
+    }
+
+    .circle {
+        position: absolute;
+
+        top: 50%;
+        left: 30%;
+
+        width: 70%;
+        height: 50%;
+
+        background-color: #017143;
+        clip-path: circle(100px at right 100px);
+    }
+}
